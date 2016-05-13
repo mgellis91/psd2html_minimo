@@ -300,7 +300,7 @@ section#hero{
 section#feature-post{
   @include outer-container(70%);
   @include media($large-screen){
-    @include outer-container(60%);
+    @include outer-container(65%);
   }
   p{
     margin-bottom: 3.2em;
@@ -310,7 +310,7 @@ section#feature-post{
 section.blog-entries{
   @include outer-container(70%);
   @include media($large-screen){
-    @include outer-container(60%);
+    @include outer-container(65%);
   }
   .entry{
 

@@ -429,7 +429,7 @@ section#feature-post {
     display: block; }
   @media screen and (min-width: 900px) {
     section#feature-post {
-      max-width: 60%;
+      max-width: 65%;
       margin-left: auto;
       margin-right: auto; }
       section#feature-post::after {
@@ -449,7 +449,7 @@ section.blog-entries {
     display: block; }
   @media screen and (min-width: 900px) {
     section.blog-entries {
-      max-width: 60%;
+      max-width: 65%;
       margin-left: auto;
       margin-right: auto; }
       section.blog-entries::after {
