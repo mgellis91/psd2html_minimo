@@ -192,6 +192,9 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/*=========================
+  Global Styles
+==========================*/
 h3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
@@ -210,43 +213,46 @@ body {
   margin: 3em 0 0 0;
   color: #626262; }
 
-header.navigation {
+/*=========================
+  Nav Bar
+==========================*/
+.navigation {
   min-height: 60px;
   width: 100%;
   z-index: 999; }
-  header.navigation .navigation-wrapper {
+  .navigation .navigation-wrapper {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     margin-bottom: 3.2em;
     z-index: 9999; }
-    header.navigation .navigation-wrapper::after {
+    .navigation .navigation-wrapper::after {
       clear: both;
       content: "";
       display: block; }
-    header.navigation .navigation-wrapper::after {
+    .navigation .navigation-wrapper::after {
       clear: both;
       content: "";
       display: block; }
     @media screen and (min-width: 900px) {
-      header.navigation .navigation-wrapper {
+      .navigation .navigation-wrapper {
         max-width: 70%;
         margin-left: auto;
         margin-right: auto; }
-        header.navigation .navigation-wrapper::after {
+        .navigation .navigation-wrapper::after {
           clear: both;
           content: "";
           display: block; } }
-  header.navigation .logo {
+  .navigation .logo {
     float: left;
     max-height: 60px;
     padding-right: 2em;
     padding-top: .5em; }
-    header.navigation .logo img {
+    .navigation .logo img {
       max-height: 60px;
       padding: 0.8em 0; }
-  header.navigation .navigation-menu-button {
+  .navigation .navigation-menu-button {
     color: #333;
     display: block;
     float: right;
@@ -256,16 +262,16 @@ header.navigation {
     text-decoration: none;
     text-transform: uppercase; }
     @media screen and (min-width: 900px) {
-      header.navigation .navigation-menu-button {
+      .navigation .navigation-menu-button {
         display: none; } }
-  header.navigation nav {
+  .navigation nav {
     float: none;
     min-height: 60px;
     z-index: 9999999; }
     @media screen and (min-width: 900px) {
-      header.navigation nav {
+      .navigation nav {
         float: right; } }
-  header.navigation ul.navigation-menu {
+  .navigation ul.navigation-menu {
     clear: both;
     display: none;
     margin: 0 auto;
@@ -273,14 +279,14 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999; }
-    header.navigation ul.navigation-menu.show {
+    .navigation ul.navigation-menu.show {
       display: block; }
     @media screen and (min-width: 900px) {
-      header.navigation ul.navigation-menu {
+      .navigation ul.navigation-menu {
         display: inline;
         margin: 0;
         padding: 0; } }
-  header.navigation ul li.nav-link {
+  .navigation ul li.nav-link {
     display: block;
     line-height: 60px;
     overflow: hidden;
@@ -289,33 +295,33 @@ header.navigation {
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 900px) {
-      header.navigation ul li.nav-link {
+      .navigation ul li.nav-link {
         background: transparent;
         display: inline;
         line-height: 60px;
         text-decoration: none;
         width: auto; } }
-    header.navigation ul li.nav-link a {
+    .navigation ul li.nav-link a {
       color: #333;
       display: inline-block;
       text-decoration: none;
       margin-left: 3em;
       text-transform: uppercase; }
-  header.navigation .active-nav-item a {
+  .navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
-  header.navigation li.more.nav-link {
+  .navigation li.more.nav-link {
     padding-right: 0; }
     @media screen and (min-width: 900px) {
-      header.navigation li.more.nav-link {
+      .navigation li.more.nav-link {
         padding-right: 1em; } }
-    header.navigation li.more.nav-link > ul > li:first-child a {
+    .navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
-    header.navigation li.more.nav-link a {
+    .navigation li.more.nav-link a {
       margin-right: 1em; }
-    header.navigation li.more.nav-link > a {
+    .navigation li.more.nav-link > a {
       padding-right: 0.6em; }
-    header.navigation li.more.nav-link > a::after {
+    .navigation li.more.nav-link > a::after {
       position: absolute;
       top: auto;
       right: -0.4em;
@@ -323,189 +329,149 @@ header.navigation {
       left: auto;
       color: #333;
       content: "\25BE"; }
-  header.navigation li.more {
+  .navigation li.more {
     overflow: visible;
     padding-right: 0; }
-    header.navigation li.more a {
+    .navigation li.more a {
       padding-right: 0.8em; }
-    header.navigation li.more > a {
+    .navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 900px) {
-        header.navigation li.more > a {
+        .navigation li.more > a {
           margin-right: 1em; } }
-      header.navigation li.more > a::after {
+      .navigation li.more > a::after {
         content: "›";
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-    header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
+    .navigation li.more:focus > .submenu, .navigation li.more:hover > .submenu {
       display: block; }
     @media screen and (min-width: 900px) {
-      header.navigation li.more {
+      .navigation li.more {
         padding-right: 0.8em;
         position: relative; } }
-  header.navigation ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu {
-        left: -1em;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu.fly-out-right {
-        left: 11.8em;
-        top: 0; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu.fly-out-left {
-        left: -11.8em;
-        top: 0; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu {
-        left: 11.8em;
-        top: 0; } }
-    header.navigation ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 900px) {
-        header.navigation ul.submenu li {
-          line-height: 46.15385px; }
-          header.navigation ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          header.navigation ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: 0.7em; } }
-      header.navigation ul.submenu li a {
-        background-color: #2b2b2b;
-        display: inline-block;
-        text-align: right;
-        width: 100%; }
-        @media screen and (min-width: 900px) {
-          header.navigation ul.submenu li a {
-            background-color: #333;
-            padding-left: 1em;
-            text-align: left;
-            width: 12em; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu {
-        display: inline-block;
-        position: relative;
-        width: 16em; }
-        header.navigation ul.submenu input {
-          box-sizing: border-box;
-          display: block; } }
 
-section#hero {
+/*=========================
+  Hero Unit
+==========================*/
+#hero {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto; }
-  section#hero::after {
+  #hero::after {
     clear: both;
     content: "";
     display: block; }
   @media screen and (min-width: 900px) {
-    section#hero {
+    #hero {
       max-width: 70%;
       margin-left: auto;
       margin-right: auto; }
-      section#hero::after {
+      #hero::after {
         clear: both;
         content: "";
         display: block; } }
-  section#hero img {
+  #hero img {
     width: 100%;
     margin-bottom: 6.4em; }
 
-section#feature-post {
+/*=========================
+  Feature Post
+==========================*/
+#feature-post {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto; }
-  section#feature-post::after {
+  #feature-post::after {
     clear: both;
     content: "";
     display: block; }
   @media screen and (min-width: 900px) {
-    section#feature-post {
+    #feature-post {
       max-width: 65%;
       margin-left: auto;
       margin-right: auto; }
-      section#feature-post::after {
+      #feature-post::after {
         clear: both;
         content: "";
         display: block; } }
-  section#feature-post p {
+  #feature-post p {
     margin-bottom: 3.2em; }
 
-section.blog-entries {
+/*=========================
+  Blog Entries
+==========================*/
+.blog-entries {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto; }
-  section.blog-entries::after {
+  .blog-entries::after {
     clear: both;
     content: "";
     display: block; }
   @media screen and (min-width: 900px) {
-    section.blog-entries {
+    .blog-entries {
       max-width: 65%;
       margin-left: auto;
       margin-right: auto; }
-      section.blog-entries::after {
+      .blog-entries::after {
         clear: both;
         content: "";
         display: block; } }
-  section.blog-entries .entry {
+  .blog-entries .entry {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    section.blog-entries .entry:last-child {
+    .blog-entries .entry:last-child {
       margin-right: 0; }
-    section.blog-entries .entry img {
+    .blog-entries .entry img {
       width: 100%;
       margin-bottom: 1.6em; }
-    section.blog-entries .entry p {
+    .blog-entries .entry p {
       margin-bottom: 3.2em; }
     @media screen and (min-width: 900px) {
-      section.blog-entries .entry {
+      .blog-entries .entry {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        section.blog-entries .entry:last-child {
+        .blog-entries .entry:last-child {
           margin-right: 0; }
-        section.blog-entries .entry:nth-child(even) {
+        .blog-entries .entry:nth-child(even) {
           margin-right: 0; } }
 
-section#signup {
+/*=========================
+  Signup Banner
+==========================*/
+#signup {
   background: #f0f0f0;
   padding: 3.2em 0;
   margin-bottom: 6.4em;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
-  section#signup::after {
+  #signup::after {
     clear: both;
     content: "";
     display: block; }
-  section#signup div#signup-container {
+  #signup #signup-container {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-left: 25.58941%;
     text-align: center; }
-    section#signup div#signup-container:last-child {
+    #signup #signup-container:last-child {
       margin-right: 0; }
-    section#signup div#signup-container h2 {
+    #signup #signup-container h2 {
       margin-bottom: 3.2rem;
       color: #333333; }
-    section#signup div#signup-container form.search-bar {
+    #signup #signup-container .search-bar {
       position: relative;
       border-bottom: 1px solid black; }
-      section#signup div#signup-container form.search-bar input[type=text] {
+      #signup #signup-container .search-bar input[type=text] {
         font-family: 'Playfair Display', serif;
         background: none;
         border: none;
@@ -519,7 +485,7 @@ section#signup {
         position: relative;
         width: 100%;
         color: #626262; }
-      section#signup div#signup-container form.search-bar button[type=submit] {
+      #signup #signup-container .search-bar button[type=submit] {
         position: absolute;
         top: 0;
         right: 0;
@@ -528,6 +494,9 @@ section#signup {
         background: none;
         padding: 0; }
 
+/*=========================
+  Load More
+==========================*/
 #load-more {
   display: block;
   margin: 6.4em auto;
